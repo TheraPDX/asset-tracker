@@ -1,0 +1,13 @@
+<template name="tracking">
+  <div id="tracking">
+    {{#if Template.subscriptionsReady}}
+      <div id="main" class="page {{mainHidden}}">
+        {{> main mainContext}}
+      </div>
+
+      <div id="map" class="page">
+        {{> map mapContext}}
+      </div>
+    {{/if}}
+  </div>
+</template>

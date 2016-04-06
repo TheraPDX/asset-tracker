@@ -1,0 +1,10 @@
+node_modules
+app/client/stylesheets/gen
+app/public/icons*.png
+
+# Sensitive information
+app/private/trackers.json
+app/private/users.json
+app/imports/mapbox.js
+app/imports/secrets.js
+tools/serial/config.json

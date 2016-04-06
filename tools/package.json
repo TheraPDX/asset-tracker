@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "dependencies": {
+    "async": "^2.0.0-rc.2",
+    "bluebird": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.0",
+    "merge-stream": "^1.0.0",
+    "mongodb": "^2.1.11",
+    "serialport": "^2.0.6",
+    "sprity": "^1.0.8",
+    "strip-indent": "^1.0.1"
+  }
+}

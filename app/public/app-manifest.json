@@ -1,0 +1,21 @@
+{
+  "short_name": "Tracker",
+  "name": "Asset Tracker",
+  "icons": [
+    {
+      "src": "launcher-1x.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "density": 1.0
+    },
+    {
+      "src": "launcher-2x.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": 2.0
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

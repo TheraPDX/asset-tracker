@@ -1,0 +1,6 @@
+{
+  "port": "/dev/ttyACM0",
+  "url": "mongodb://localhost:3001/meteor",
+  "device": "",
+  "tracker": ""
+}

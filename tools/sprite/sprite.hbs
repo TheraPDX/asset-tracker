@@ -1,0 +1,24 @@
+{{#each layouts}}
+  {{#each sprites}}
+    .{{cssesc ../classname}} {
+      background-image: url("{{escimage url}}");
+      background-size: {{baseWidth}}px {{baseHeight}}px;
+    }
+
+    @media (min-resolution: 192dpi) {
+      .{{cssesc ../classname}} {
+        background-image: url("{{escimage (retinaUrl)}}");
+      }
+    }
+  {{/each}}
+  {{#each layout.items}}
+    {{!\n}}
+
+    .{{cssesc ../classname}}-{{cssesc meta.name}} {
+      width: {{baseDim width}}px;
+      height: {{baseDim height}}px;
+
+      background-position: {{coord (baseDim x)}} {{coord (baseDim y)}};
+    }
+  {{/each}}
+{{/each}}

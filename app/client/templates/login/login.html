@@ -1,0 +1,31 @@
+<template name="login">
+  <div id="login">
+    {{#section error=error}}
+      <div class="header">
+        <div class="title-logo">
+          <div class="icon icon-logo"></div>
+
+          <div class="title">
+            Asset Tracker
+          </div>
+        </div>
+      </div>
+
+      <form class="form" autocomplete="off">
+        <input
+          name="email"
+          type="email"
+          placeholder="Email">
+
+        <input
+          name="password"
+          type="password"
+          placeholder="Password">
+
+        <button type="submit" class="submit" {{disabled}}>
+          <div class="icon icon-login"></div>
+        </button>
+      </form>
+    {{/section}}
+  </div>
+</template>

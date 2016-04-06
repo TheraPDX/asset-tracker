@@ -1,0 +1,25 @@
+<template name="tracker">
+  <div class="status {{status}}"></div>
+
+  <div class="details">
+    <div class="title">{{tracker.name}}</div>
+
+    <div class="last-update">
+      {{updated}}
+    </div>
+
+    <div class="coordinates">
+      Lat. {{coord tracker.lat}}, Long. {{coord tracker.lon}}
+    </div>
+  </div>
+
+  <div class="actions">
+    <button type="button" class="record">
+      <div class="icon {{recordClass}}"></div>
+    </button>
+
+    <button type="button" class="alarm">
+      <div class="icon {{alarmClass}}"></div>
+    </button>
+  </div>
+</template>

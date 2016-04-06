@@ -1,0 +1,54 @@
+@import "shared.import.less";
+
+#tracking {
+  .page {
+    @media @desktop {
+      &:not(:first-child) {
+        padding-left: 0px;
+      }
+
+      padding: 15px;
+    }
+
+    @media not @desktop {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  #main {
+    @media not @desktop {
+      &.mobile-hidden {
+        display: none;
+      }
+
+      z-index: 1;
+    }
+
+    @media @desktop {
+      width: 360px;
+    }
+
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  #map {
+    @media @desktop {
+      flex: 1;
+    }
+
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  @media @desktop {
+    display: flex;
+  }
+
+  box-sizing: border-box;
+  height: 100%;
+}

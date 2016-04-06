@@ -1,0 +1,43 @@
+<template name="main">
+  {{#section classes="main" error=error}}
+    <div class="header distributed">
+      <div class="title-logo">
+        <div class="icon icon-logo"></div>
+
+        <div class="title">
+          Asset Tracker
+        </div>
+      </div>
+
+      <button type="button" class="button logout">
+        <div class="icon icon-logout"></div>
+      </button>
+    </div>
+
+    <div class="scrollable">
+      <h2>Trackers</h2>
+
+      <ul class="trackers">
+        {{#each trackers}}
+          <li class="item tracker">
+            {{> tracker (trackerContext this)}}
+          </li>
+        {{/each}}
+      </ul>
+
+      <h2>Recordings</h2>
+
+      <ul class="recordings">
+        {{#each recordings}}
+          <li class="item recording">
+            {{> recording}}
+          </li>
+        {{else}}
+          <li class="empty-list">
+            There are no recordings
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/section}}
+</template>

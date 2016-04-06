@@ -1,0 +1,104 @@
+@import "shared.import.less";
+
+html {
+  height: 100%;
+}
+
+body {
+  @media @desktop {
+    background: @background;
+
+    font-size: 17px;
+  }
+
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  background: @section;
+  color: @main;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+h1 {
+  margin: 16px 0;
+  font-size: 24px;
+}
+
+h2 {
+  margin: 10px 20px;
+  color: @highlight;
+  font-size: 17px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+img {
+  display: block;
+}
+
+strong {
+  font-weight: 700;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  @media @desktop {
+    padding: 10px 20px;
+
+    font-size: 15px;
+  }
+
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  border: solid @edge;
+  border-width: 1px 0;
+  outline: 0;
+
+  background: @input;
+  color: @main;
+
+  font-family: inherit;
+  font-size: 17px;
+}
+
+button[type=button], button[type=submit] {
+  .icon {
+    margin: auto;
+  }
+
+  &::-moz-focus-inner {
+    padding: 0;
+  }
+
+  &:disabled {
+    background: @edge;
+  }
+
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid @edge;
+  border-radius: 3px;
+  outline: none;
+  margin: 0;
+
+  background: @shade;
+  color: @minor;
+  -webkit-tap-highlight-color: fade(@edge, 50%);
+
+  font: inherit;
+
+  cursor: pointer;
+}

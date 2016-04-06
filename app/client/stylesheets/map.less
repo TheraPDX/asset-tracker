@@ -1,0 +1,40 @@
+@import "shared.import.less";
+
+.map {
+  .header {
+    @media @desktop {
+      .back {
+        display: none;
+      }
+    }
+
+    h3 {
+      @media @desktop {
+        margin-left: 0;
+      }
+
+      margin-left: 15px;
+    }
+  }
+
+  #mapbox {
+    @media @desktop {
+      .mapboxgl-canvas {
+        border-radius: 3px;
+      }
+    }
+
+    .mapboxgl-popup-content {
+      padding: 6px 8px;
+
+      font: 14px 'Roboto';
+      font-weight: 700;
+    }
+
+    flex: 1;
+  }
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

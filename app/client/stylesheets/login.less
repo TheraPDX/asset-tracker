@@ -1,0 +1,37 @@
+@import "shared.import.less";
+
+#login {
+  .form {
+    input {
+      width: 100%;
+      border-top: 0;
+    }
+
+    .submit {
+      margin-top: 15px;
+    }
+
+    .error {
+      margin-top: 20px;
+      color: @error;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  @media @desktop {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+
+    background: none;
+  }
+
+  box-sizing: border-box;
+  height: 100%;
+  background: @background;
+}

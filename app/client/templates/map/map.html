@@ -1,0 +1,15 @@
+<template name="map">
+  {{#section classes="map"}}
+    {{#if headerVisible}}
+      <div class="header">
+        <button type="button" class="back">
+          <div class="icon icon-back"></div>
+        </button>
+
+        <h3>{{title}}</h3>
+      </div>
+    {{/if}}
+
+    <div id="mapbox"></div>
+  {{/section}}
+</template>

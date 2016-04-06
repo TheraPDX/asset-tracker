@@ -1,0 +1,8 @@
+{
+  "<email>": [
+    {
+      "particleId": "<Electron device ID>",
+      "name": "<display name>"
+    }
+  ]
+}

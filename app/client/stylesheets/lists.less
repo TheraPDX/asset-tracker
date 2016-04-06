@@ -1,0 +1,115 @@
+@import "shared.import.less";
+
+ul {
+  li.item {
+    .details {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      font-size: 14px;
+    }
+
+    .title {
+      overflow: hidden;
+
+      font-size: 17px;
+      font-weight: 700;
+
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .actions {
+      button {
+        &:first-child {
+          margin-top: 0;
+        }
+
+        margin-top: 10px;
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &:first-child {
+      border-top-width: 1px;
+    }
+
+    @media @desktop {
+      &:hover {
+        background: @shade;
+      }
+
+      cursor: pointer;
+    }
+
+    display: flex;
+    flex: 1;
+    padding: 15px 20px;
+    border: 1px solid @edge;
+    border-width: 0 0 1px;
+  }
+
+  li.empty-list {
+    padding: 15px 20px 0;
+    border-top: 1px solid @edge;
+
+    color: @minor;
+
+    font-size: 17px;
+  }
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+ul.trackers li.item {
+  .status {
+    &.high {
+      background: @high;
+      border: 1px solid darken(@high, 15%);
+    }
+
+    &.medium {
+      background: @medium;
+      border: 1px solid darken(@medium, 15%);
+    }
+
+    &.low {
+      background: @low;
+      border: 1px solid darken(@low, 15%);
+    }
+
+    width: 10px;
+    height: 10px;
+    margin-top: 4px;
+    border: 1px solid @minor;
+    border-radius: 50%;
+  }
+
+  .details {
+    .last-update {
+      margin-top: 10px;
+    }
+
+    .coordinates {
+      margin-top: 6px;
+      color: @minor;
+    }
+
+    margin-left: 15px;
+  }
+}
+
+ul.recordings {
+  li.item {
+    align-items: center;
+  }
+
+  margin-bottom: 20px;
+}
