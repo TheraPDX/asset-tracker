@@ -62,15 +62,17 @@ function sendAlarm(event) {
     return;
   }
 
-  smsClient.messages.create({
-    to: owner.profile.phone,
-    from: twilioData.from,
-    body: `Alarm: ${tracker.name} was moved!`
-  }, function(err, res) {
-    if (err) {
-      console.error(err);
-    }
-  });
+  if (smsClient) {
+    smsClient.messages.create({
+      to: owner.profile.phone,
+      from: twilioData.from,
+      body: `Alarm: ${tracker.name} was moved!`
+    }, function(err, res) {
+      if (err) {
+        console.error(err);
+      }
+    });
+  }
 }
 
 function updateStatus(event) {
