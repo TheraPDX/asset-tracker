@@ -16,7 +16,9 @@ Meteor.startup(function() {
         }
       });
     } else {
-      Accounts.setPassword(existing._id, info.password);
+      Accounts.setPassword(existing._id, info.password, {
+        logout: false
+      });
     }
   }
 
