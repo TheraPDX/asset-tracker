@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-decompress": "^1.2.0",
+    "gulp-download": "0.0.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-svg-sprite": "^1.2.19"
+  }
+}
